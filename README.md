@@ -1,1 +1,9 @@
-# AYURPATH
+AYUSH (Ayurveda, Yoga, Unani, Siddha, Homeopathy) web application project, SQL played a central role in managing the backend data efficiently and ensuring accurate, real-time results for users. The system required storing details of ancient measurement units from multiple traditional systems and mapping them to their modern scientific equivalents based on different authors’ references.
+
+I designed and implemented a MySQL database schema that supported this structure. The schema included separate tables for authors, ancient units, modern units, and the mapping relationships between them. To maintain data consistency and integrity, I applied normalization principles to avoid redundancy and implemented primary keys, foreign keys, and constraints to enforce relationships between tables.
+
+For real-time data retrieval, I wrote SQL queries using JOINs, WHERE clauses, and conditional filtering so that when a user selected a particular author and ancient unit in the web app, the system fetched and displayed the corresponding modern unit instantly. I optimized query performance by creating indexes on frequently searched columns, which significantly reduced response time for the user interface.
+
+I also implemented stored procedures for repetitive operations, such as fetching full conversion lists or generating author-specific unit mappings. This helped streamline the application logic and reduced the complexity in the Flask backend. Furthermore, I incorporated data validation rules at the database level to prevent incorrect or incomplete entries, which ensured the reliability of the system over time.
+
+Overall, my SQL implementation ensured that the AYUSH app was fast, accurate, and scalable. The combination of an optimized database structure, efficient query design, and robust validation mechanisms allowed the application to deliver precise conversion data seamlessly, supporting its purpose of bridging traditional knowledge with modern scientific measurements.
